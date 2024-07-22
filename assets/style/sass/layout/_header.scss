@@ -1,0 +1,77 @@
+@use "../abstract/mixins" as *;
+header {
+  border: 1px solid #d6e4e5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+  @include size(100%, 140px);
+  background-color: #eff5f5;
+  .global-notification {
+    height: 40px;
+    @include places;
+    justify-content: center;
+    font-size: 12px;
+    font-family: "Jost", sans-serif;
+    background-color: #497174;
+    color: white;
+    a {
+      color: white;
+      font-weight: 600;
+    }
+  }
+  .container {
+    .header-wrapper {
+      @include size(100%, 100px);
+      @include places;
+      justify-content: space-between;
+      .header-left {
+        font-size: 25px;
+        font-family: "Jost", sans-serif;
+        font-weight: 600;
+        color: #112b3c;
+      }
+      nav {
+        .menu {
+          display: flex;
+
+          gap: 28px;
+          a {
+            color: #112b3c;
+            font-size: 14px;
+            font-family: "Jost", sans-serif;
+            font-weight: 500;
+          }
+          i {
+            color: #112b3c;
+            font-size: 13px;
+          }
+        }
+      }
+      .header-right {
+        .left-menu {
+          display: flex;
+          gap: 20px;
+          i {
+            font-size: 18px;
+            color: #112b3c;
+          }
+          .cart{
+            position: relative;
+          
+         
+          .count{
+            position: absolute;
+            bottom: 70%;
+      padding-top: 2px
+       ;
+            border-radius: 50%;
+            @include size(16px,16px);
+            text-align: center;
+            font-size: 10px;
+            color: white;
+            background-color: #EB6440;
+          }
+        }
+        }
+      }
+    }
+  }
+}

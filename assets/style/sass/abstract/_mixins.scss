@@ -1,0 +1,8 @@
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+@mixin places {
+  display: flex;
+  align-items: center;
+}
