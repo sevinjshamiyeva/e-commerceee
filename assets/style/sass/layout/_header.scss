@@ -2,10 +2,10 @@
 header {
   border: 1px solid #d6e4e5;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
-  @include size(100%, 140px);
+  @include size(100%, 145px);
   background-color: #eff5f5;
   .global-notification {
-    height: 40px;
+    height: 45px;
     @include places;
     justify-content: center;
     font-size: 12px;
@@ -32,7 +32,7 @@ header {
         .menu {
           display: flex;
 
-          gap: 28px;
+          gap: 30px;
           a {
             color: #112b3c;
             font-size: 14px;
@@ -41,7 +41,24 @@ header {
           }
           i {
             color: #112b3c;
-            font-size: 13px;
+            font-size: 12px;
+          }
+          .link {
+            position: relative;
+                        &:hover::after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              background-color: #497174;
+              position: absolute;
+              // bottom: -2px;
+              // left: 50%;
+              // transform: translateX(-50%);
+              bottom: -2px;
+              left: 0;
+               transition: width 0.3s ease; 
+            }
+
           }
         }
       }
@@ -53,23 +70,20 @@ header {
             font-size: 18px;
             color: #112b3c;
           }
-          .cart{
+          .cart {
             position: relative;
-          
-         
-          .count{
-            position: absolute;
-            bottom: 70%;
-      padding-top: 2px
-       ;
-            border-radius: 50%;
-            @include size(16px,16px);
-            text-align: center;
-            font-size: 10px;
-            color: white;
-            background-color: #EB6440;
+            .count {
+              position: absolute;
+              bottom: 70%;
+              padding-top: 2px;
+              border-radius: 50%;
+              @include size(16px, 16px);
+              text-align: center;
+              font-size: 10px;
+              color: white;
+              background-color: #eb6440;
+            }
           }
-        }
         }
       }
     }
