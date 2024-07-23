@@ -54,6 +54,7 @@ header .container .header-wrapper .header-left {
 header .container .header-wrapper nav .menu {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 header .container .header-wrapper nav .menu a {
   color: #112b3c;
@@ -67,6 +68,32 @@ header .container .header-wrapper nav .menu i {
 }
 header .container .header-wrapper nav .menu .link {
   position: relative;
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+header .container .header-wrapper nav .menu .link:hover a, header .container .header-wrapper nav .menu .link i {
+  color: #497174;
+}
+header .container .header-wrapper nav .menu .link .dropdown-wrapper {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  border: 1px solid #deeffa;
+  background-color: white;
+  width: 160px;
+  height: 200px;
+  display: none;
+}
+header .container .header-wrapper nav .menu .link .dropdown-wrapper .dropdown-menu .dropdown-link {
+  margin-top: 10px;
+}
+header .container .header-wrapper nav .menu .link .dropdown-wrapper .dropdown-menu .dropdown-link a {
+  font-size: 12px;
+  padding: 20px 20px;
+}
+header .container .header-wrapper nav .menu .link:hover .dropdown-wrapper {
+  display: block;
 }
 header .container .header-wrapper nav .menu .link:hover::after {
   content: "";
@@ -74,9 +101,59 @@ header .container .header-wrapper nav .menu .link:hover::after {
   height: 2px;
   background-color: #497174;
   position: absolute;
-  bottom: -2px;
+  bottom: 40px;
   left: 0;
   transition: width 0.3s ease;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #d6e4e5;
+  width: 1100px;
+  left: -450px;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #eff5f5;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper .mega-img {
+  margin-top: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  font-family: "Jost", sans-serif;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper .mega-img .subtitle {
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper .mega-img .btn {
+  width: 150px;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 2px solid #d6e4e5;
+  background-color: #eff5f5;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper .mega-img .btn:hover {
+  background-color: #d6e4e5;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper ul {
+  margin-top: 20px;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper ul li {
+  margin-top: 10px;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper ul li h1 {
+  font-size: 12px;
+  font-family: "Jost", sans-serif;
+  padding: 10px 10px;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper ul li a {
+  padding: 10px 10px;
+  font-size: 12px;
+  font-family: "Jost", sans-serif;
 }
 header .container .header-wrapper .header-right .left-menu {
   display: flex;
