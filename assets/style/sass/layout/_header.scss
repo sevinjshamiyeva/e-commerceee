@@ -39,6 +39,9 @@ header {
             font-size: 14px;
             font-family: "Jost", sans-serif;
             font-weight: 500;
+            &:hover {
+              color: #497174;
+            }
           }
           i {
             color: #112b3c;
@@ -49,19 +52,28 @@ header {
             display: flex;
             height: 100px;
             align-items: center;
-            &:hover a,i {
-              color: #497174;
+            &:hover .dropdown-wrapper {
+              display: block;
             }
+
+            &:hover .megamenu-wrapper {
+              display: flex;
+            }
+            // &:hover a,
+            // i {
+            //   color: #497174;
+            // }
 
             .dropdown-wrapper {
               position: absolute;
               top: 100%;
               left: -20px;
               border: 1px solid #deeffa;
-              background-color: white;
+              background-color: #eff5f5;
               width: 160px;
               height: 200px;
               display: none;
+
               .dropdown-menu {
                 .dropdown-link {
                   margin-top: 10px;
@@ -69,12 +81,13 @@ header {
                     font-size: 12px;
                     padding: 20px 20px;
                   }
+                  &:hover a {
+                    color: #497174;
+                  }
                 }
               }
             }
-            &:hover .dropdown-wrapper {
-              display: block;
-            }
+
             &:hover::after {
               content: "";
               width: 100%;
@@ -99,7 +112,12 @@ header {
               display: flex;
               justify-content: space-around;
               background-color: #eff5f5;
-              
+              display: none;
+              a {
+                &:hover {
+                  color: #497174;
+                }
+              }
               .mega-img {
                 margin-top: 20px;
                 padding-right: 20px;
@@ -145,6 +163,7 @@ header {
           }
         }
       }
+
       .header-right {
         .left-menu {
           display: flex;

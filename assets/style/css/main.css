@@ -62,6 +62,9 @@ header .container .header-wrapper nav .menu a {
   font-family: "Jost", sans-serif;
   font-weight: 500;
 }
+header .container .header-wrapper nav .menu a:hover {
+  color: #497174;
+}
 header .container .header-wrapper nav .menu i {
   color: #112b3c;
   font-size: 12px;
@@ -72,15 +75,18 @@ header .container .header-wrapper nav .menu .link {
   height: 100px;
   align-items: center;
 }
-header .container .header-wrapper nav .menu .link:hover a, header .container .header-wrapper nav .menu .link i {
-  color: #497174;
+header .container .header-wrapper nav .menu .link:hover .dropdown-wrapper {
+  display: block;
+}
+header .container .header-wrapper nav .menu .link:hover .megamenu-wrapper {
+  display: flex;
 }
 header .container .header-wrapper nav .menu .link .dropdown-wrapper {
   position: absolute;
   top: 100%;
   left: -20px;
   border: 1px solid #deeffa;
-  background-color: white;
+  background-color: #eff5f5;
   width: 160px;
   height: 200px;
   display: none;
@@ -92,8 +98,8 @@ header .container .header-wrapper nav .menu .link .dropdown-wrapper .dropdown-me
   font-size: 12px;
   padding: 20px 20px;
 }
-header .container .header-wrapper nav .menu .link:hover .dropdown-wrapper {
-  display: block;
+header .container .header-wrapper nav .menu .link .dropdown-wrapper .dropdown-menu .dropdown-link:hover a {
+  color: #497174;
 }
 header .container .header-wrapper nav .menu .link:hover::after {
   content: "";
@@ -115,6 +121,10 @@ header .container .header-wrapper nav .menu .link .megamenu-wrapper {
   display: flex;
   justify-content: space-around;
   background-color: #eff5f5;
+  display: none;
+}
+header .container .header-wrapper nav .menu .link .megamenu-wrapper a:hover {
+  color: #497174;
 }
 header .container .header-wrapper nav .menu .link .megamenu-wrapper .mega-img {
   margin-top: 20px;
