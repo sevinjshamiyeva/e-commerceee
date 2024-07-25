@@ -1,2 +1,4 @@
 @use "./base/reset";
-@use './layout/header';
+@use "./components/dropdown";
+@use "./components/modal-search";
+@use "./layout/header";
