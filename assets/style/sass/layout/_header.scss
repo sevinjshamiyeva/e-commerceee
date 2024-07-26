@@ -7,11 +7,11 @@ header {
   .global-notification {
     height: 45px;
     @include places;
-    justify-content: center;
     font-size: 12px;
     font-family: "Jost", sans-serif;
     background-color: #497174;
     color: white;
+    text-align: center;
     a {
       color: white;
       font-weight: 600;
@@ -27,27 +27,6 @@ header {
         font-family: "Jost", sans-serif;
         font-weight: 600;
         color: #112b3c;
-      }
-      nav {
-        .menu {
-          display: flex;
-          gap: 30px;
-          align-items: center;
-
-          a {
-            color: #112b3c;
-            font-size: 14px;
-            font-family: "Jost", sans-serif;
-            font-weight: 500;
-            &:hover {
-              color: #497174;
-            }
-          }
-          i {
-            color: #112b3c;
-            font-size: 12px;
-          }
-        }
       }
 
       .header-right {
