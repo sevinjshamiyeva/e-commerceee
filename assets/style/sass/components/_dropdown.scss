@@ -10,10 +10,12 @@ nav {
       align-items: center;
       &:hover .dropdown-wrapper {
         display: block;
+        z-index: 1000;
       }
 
       &:hover .megamenu-wrapper {
         display: flex;
+        z-index: 1000;
       }
       &:hover i {
         color: #497174;
@@ -31,6 +33,7 @@ nav {
         width: 160px;
         height: 200px;
         display: none;
+        
 
         .dropdown-menu {
           .dropdown-link {
@@ -71,6 +74,7 @@ nav {
         justify-content: space-around;
         background-color: #eff5f5;
         display: none;
+      
         a {
           &:hover {
             color: #497174;
@@ -138,8 +142,7 @@ nav {
 
 @media only screen and (max-width: 992px) {
   nav {
-    .menu {
-      display: none;
-    }
+    display: none;
   }
+  
 }

@@ -22,6 +22,9 @@ header {
       @include size(100%, 100px);
       @include places;
       justify-content: space-between;
+      .responsive-menu {
+        font-size: 24px;
+      }
       .header-left {
         font-size: 25px;
         font-family: "Jost", sans-serif;
@@ -56,3 +59,19 @@ header {
     }
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .responsive-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .global-notification{
+    .container{
+      font-size: 10px;
+    }
+  }
+  
+}
+

@@ -17,6 +17,21 @@ ul {
   width: 70%;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+.btns {
+  width: 130px;
+  height: 50px;
+  font-family: "Jost", sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #53787B;
+  font-size: 15px;
+  color: white;
+}
+
 nav .menu {
   display: flex;
   gap: 30px;
@@ -30,9 +45,11 @@ nav .menu .link {
 }
 nav .menu .link:hover .dropdown-wrapper {
   display: block;
+  z-index: 1000;
 }
 nav .menu .link:hover .megamenu-wrapper {
   display: flex;
+  z-index: 1000;
 }
 nav .menu .link:hover i {
   color: #497174;
@@ -139,7 +156,7 @@ nav .menu i {
 }
 
 @media only screen and (max-width: 992px) {
-  nav .menu {
+  nav {
     display: none;
   }
 }
@@ -271,6 +288,80 @@ nav .menu i {
   padding: 10px;
 }
 
+.section1 {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.section1 .slider .slider-wrapper .slider-buttons {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 30px;
+}
+.section1 .slider .slider-wrapper .slider-buttons .chevron {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 100%;
+  border: none;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.section1 .slider .slider-wrapper .slider-buttons .chevron:hover {
+  opacity: 1;
+  background-color: #497174;
+  transition: background-color 0.3s;
+  color: white;
+}
+.section1 .slider .slider-wrapper .slider-dots {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  justify-content: center;
+  gap: 10px;
+}
+.section1 .slider .slider-wrapper .slider-dots .dot {
+  align-items: end;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #497174;
+  opacity: 1;
+  cursor: pointer;
+}
+.section1 .slider .slider-wrapper .slider-dots .dot:hover {
+  opacity: 0.5;
+}
+.section1 .slider .slider-wrapper .slider-item .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 145px);
+  font-family: "Jost", sans-serif;
+}
+.section1 .slider .slider-wrapper .slider-item .container .subtitle {
+  font-size: 18px;
+}
+.section1 .slider .slider-wrapper .slider-item .container h1 {
+  font-size: 60px;
+  font-weight: 400;
+}
+.section1 .slider .slider-wrapper .slider-item .slider-img img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100vh - 145px);
+  z-index: -1;
+  object-fit: cover;
+  object-position: 60% !important;
+}
+
 header {
   border: 1px solid #d6e4e5;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
@@ -298,6 +389,9 @@ header .container .header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+header .container .header-wrapper .responsive-menu {
+  font-size: 24px;
 }
 header .container .header-wrapper .header-left {
   font-size: 25px;
@@ -327,4 +421,15 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   font-size: 10px;
   color: white;
   background-color: #eb6440;
+}
+
+@media only screen and (min-width: 992px) {
+  .responsive-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .global-notification .container {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
