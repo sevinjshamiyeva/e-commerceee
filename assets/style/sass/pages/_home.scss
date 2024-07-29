@@ -1,0 +1,23 @@
+.category {
+  width: 100%;
+  background-color: #EFF5F5;
+  .container {
+    border: 1px solid black;
+    .category-wrapper{
+      min-height: 300px;
+        .category-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        font-family: "Jost", sans-serif;
+        color: #112B3C;
+        h1{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        
+    }
+    }
+  }
+}

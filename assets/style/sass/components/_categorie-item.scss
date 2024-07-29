@@ -1,0 +1,33 @@
+.categories {
+  width: 100%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+
+
+  .categorie-item {
+    border: 1px solid black;
+    height: 170px;
+    width: 140px;
+   
+  }
+}
+
+@media only screen and (max-width:992px){
+    .categories{
+          grid-template-columns: repeat(6,1fr);
+    }
+}
+@media only screen and (max-width:768px){
+    .categories{
+          grid-template-columns: repeat(4,1fr);
+    }
+}
+@media only screen and (max-width:320px){
+    .categories{
+          grid-template-columns: repeat(2,1fr);
+    }
+}

@@ -36,6 +36,7 @@ header {
         .left-menu {
           display: flex;
           gap: 20px;
+          margin-right: 15px;
           i {
             font-size: 18px;
             color: #112b3c;
@@ -74,4 +75,36 @@ header {
   }
   
 }
+@media only screen and (max-width: 1200px) {
+  .container{
+    max-width: 992px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container{
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container{
+    max-width: 576px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container{
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .container{
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container{
+    max-width: 310px;
+  }
+}
+
+
 
