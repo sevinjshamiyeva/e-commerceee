@@ -1,21 +1,19 @@
-.category {
+.category-products {
   width: 100%;
-  background-color: #EFF5F5;
+  background-color: #eff5f5;
   .container {
-    .category-wrapper{
-        .category-title {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 20px;
-        font-family: "Jost", sans-serif;
-        color: #112B3C;
-        h1{
-            font-size: 30px;
-            font-weight: 500;
-        }
-        
+    .title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+      font-family: "Jost", sans-serif;
+      color: #112b3c;
+      h1 {
+        font-size: 30px;
+        font-weight: 500;
+      }
     }
-    }
+    
   }
 }

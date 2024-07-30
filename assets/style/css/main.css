@@ -509,19 +509,19 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
     max-width: 310px;
   }
 }
-.category {
+.category-products {
   width: 100%;
-  background-color: #EFF5F5;
+  background-color: #eff5f5;
 }
-.category .container .category-wrapper .category-title {
+.category-products .container .title {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 20px;
   font-family: "Jost", sans-serif;
-  color: #112B3C;
+  color: #112b3c;
 }
-.category .container .category-wrapper .category-title h1 {
+.category-products .container .title h1 {
   font-size: 30px;
   font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
