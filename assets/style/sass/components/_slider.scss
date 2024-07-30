@@ -81,3 +81,13 @@
     }
   }
 }
+
+@media only screen and (max-width:768px){
+  .slider{
+    .slider-wrapper{
+      .slider-buttons{
+    display: none;
+  }
+    }
+  }
+}

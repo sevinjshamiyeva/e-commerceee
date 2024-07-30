@@ -33,33 +33,43 @@ h1, h2, h3, h4, p {
 }
 
 .categories {
-  width: 100%;
-  border: 1px solid black;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  margin-top: 40px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 40px;
 }
 .categories .categorie-item {
-  border: 1px solid black;
-  height: 170px;
-  width: 140px;
+  border-radius: 5px;
+  background-color: #d6e4e5;
+}
+.categories .categorie-item .subtitle {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #112b3c;
+  font-family: "Jost", sans-serif;
+}
+.categories .categorie-item img {
+  padding: 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 15px !important;
+  transition: transform 0.3s ease;
+}
+.categories .categorie-item img:hover {
+  transform: scale(1.1);
 }
 
-@media only screen and (max-width: 992px) {
-  .categories {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
 @media only screen and (max-width: 768px) {
   .categories {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   .categories {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 nav .menu {
@@ -392,6 +402,11 @@ nav .menu i {
   object-position: 60% !important;
 }
 
+@media only screen and (max-width: 768px) {
+  .slider .slider-wrapper .slider-buttons {
+    display: none;
+  }
+}
 header {
   border: 1px solid #d6e4e5;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
@@ -497,12 +512,6 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
 .category {
   width: 100%;
   background-color: #EFF5F5;
-}
-.category .container {
-  border: 1px solid black;
-}
-.category .container .category-wrapper {
-  min-height: 300px;
 }
 .category .container .category-wrapper .category-title {
   display: flex;
