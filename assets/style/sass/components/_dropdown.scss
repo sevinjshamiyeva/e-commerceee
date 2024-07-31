@@ -141,7 +141,35 @@ nav {
 
 @media only screen and (max-width: 992px) {
   nav {
-    display: none;
+    background-color: white;
+    width: 200px;
+    height: 100%;
+position: fixed;
+      left: 0;
+      z-index: 1000;
+      top: 0;
+      pointer-events: none;
+      background-color: #eff5f5;
+border-right: 2px solid #d6e4e5;
+display: none;
+  
+      .toggle{
+        display: flex;
+        justify-content: end;
+        margin-top: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+      }
+    .menu{
+      display: block;
+      margin-top: 30px;
+      margin-left: 70px;
+      i{
+        display: none;
+      }
+      
+      
+    }
   }
   
 }

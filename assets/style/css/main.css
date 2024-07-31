@@ -197,6 +197,31 @@ nav .menu i {
 
 @media only screen and (max-width: 992px) {
   nav {
+    background-color: white;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    top: 0;
+    pointer-events: none;
+    background-color: #eff5f5;
+    border-right: 2px solid #d6e4e5;
+    display: none;
+  }
+  nav .toggle {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  nav .menu {
+    display: block;
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+  nav .menu i {
     display: none;
   }
 }
@@ -208,6 +233,7 @@ nav .menu i {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9;
+  display: none;
 }
 .modal-overlay .modal-search {
   max-width: 800px;

@@ -25,6 +25,7 @@ header {
       .responsive-menu {
         font-size: 24px;
       }
+      
       .header-left {
         font-size: 25px;
         font-family: "Jost", sans-serif;
@@ -68,43 +69,39 @@ header {
 }
 
 @media only screen and (max-width: 460px) {
-  .global-notification{
-    .container{
+  .global-notification {
+    .container {
       font-size: 10px;
     }
   }
-  
 }
 @media only screen and (max-width: 1200px) {
-  .container{
+  .container {
     max-width: 992px;
   }
 }
 @media only screen and (max-width: 992px) {
-  .container{
+  .container {
     max-width: 768px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .container{
+  .container {
     max-width: 576px;
   }
 }
 @media only screen and (max-width: 576px) {
-  .container{
+  .container {
     max-width: 460px;
   }
 }
 @media only screen and (max-width: 460px) {
-  .container{
+  .container {
     max-width: 400px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .container{
+  .container {
     max-width: 310px;
   }
 }
-
-
-
