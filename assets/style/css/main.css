@@ -208,12 +208,12 @@ nav .menu i {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9;
-  display: none;
 }
 .modal-overlay .modal-search {
-  width: 800px;
+  max-width: 800px;
   border: 1px solid #efefef;
-  min-height: 500px;
+  max-height: 80vh;
+  overflow: auto;
   margin: auto;
   background-color: #eff5f5;
   border-radius: 10px;
@@ -328,6 +328,16 @@ nav .menu i {
   padding: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+  .modal-overlay .modal-search {
+    max-width: 400px;
+  }
+  .modal-overlay .modal-search .modal-wrapper .cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
 .slider {
   width: 100%;
   position: relative;
