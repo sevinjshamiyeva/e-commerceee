@@ -72,6 +72,9 @@ h1, h2, h3, h4, p {
     align-items: center;
   }
 }
+nav .toggle {
+  display: none;
+}
 nav .menu {
   display: flex;
   gap: 30px;
@@ -207,7 +210,6 @@ nav .menu i {
     pointer-events: none;
     background-color: #eff5f5;
     border-right: 2px solid #d6e4e5;
-    display: none;
   }
   nav .toggle {
     display: flex;

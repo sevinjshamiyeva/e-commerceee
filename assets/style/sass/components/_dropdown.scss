@@ -1,8 +1,12 @@
 nav {
+  .toggle{
+      display: none;
+    }
   .menu {
     display: flex;
     gap: 30px;
     align-items: center;
+    
     .link {
       position: relative;
       display: flex;
@@ -151,7 +155,7 @@ position: fixed;
       pointer-events: none;
       background-color: #eff5f5;
 border-right: 2px solid #d6e4e5;
-display: none;
+
   
       .toggle{
         display: flex;
