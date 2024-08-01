@@ -39,13 +39,19 @@ h1, h2, h3, h4, p {
 }
 .card .image {
   display: flex;
-  margin-top: 10px;
+  margin-top: 15px;
   justify-content: center;
   border-radius: 5px;
 }
 .card .image img {
-  width: 90%;
+  width: 88%;
   border-radius: 5px;
+  transition: 0.3s ease all;
+}
+.card .image .img2 {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
 }
 .card .card-detail {
   text-align: center;
@@ -87,6 +93,35 @@ h1, h2, h3, h4, p {
   background-color: #eb6845;
   font-family: "Jost", sans-serif;
   font-size: 13px;
+}
+.card .card-elements {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-out all;
+}
+.card .card-elements .element {
+  width: 35px;
+  height: 35px;
+  color: white;
+  background-color: #112b3c;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.card:hover .card-elements {
+  transform: translate(15px);
+  opacity: 1;
+  visibility: visible;
+}
+.card:hover .img2 {
+  opacity: 1;
+  visibility: visible;
 }
 
 .categories {
@@ -624,12 +659,10 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   font-weight: 500;
 }
 .category-products .container .products {
-  border: 1px solid black;
   position: relative;
 }
 .category-products .container .products .product {
   margin: 20px 0;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
@@ -648,6 +681,7 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   border-radius: 100%;
   border: none;
   opacity: 0.4;
+  background-color: #497174;
   cursor: pointer;
 }
 .category-products .container .products .slider-buttons .chevron:hover {

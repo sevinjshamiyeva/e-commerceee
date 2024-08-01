@@ -14,46 +14,39 @@
         font-weight: 500;
       }
     }
-    .products{
-border: 1px solid black;
-position: relative;
-      .product{
+    .products {
+      position: relative;
+      .product {
         margin: 20px 0;
-        border: 1px solid black;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-    column-gap: 40px;
-
-    
-    
-
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 40px;
       }
       .slider-buttons {
-      width: 100%;
-      display: flex;
-     top:50%;
-    position: absolute;
-    justify-content: space-between;
-  
-      
+        width: 100%;
+        display: flex;
+        top: 50%;
+        position: absolute;
+        justify-content: space-between;
 
-      .chevron {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-        border-radius: 100%;
-        border: none;
-        opacity: 0.4;
-        cursor: pointer;
-
-        &:hover {
-          opacity: 1;
+        .chevron {
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          border-radius: 100%;
+          border: none;
+          opacity: 0.4;
           background-color: #497174;
-          transition: background-color 0.3s;
-          color: white;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 1;
+            background-color: #497174;
+            transition: background-color 0.3s;
+            color: white;
+          }
         }
       }
-    }
     }
   }
 }
