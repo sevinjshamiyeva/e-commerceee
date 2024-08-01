@@ -32,6 +32,63 @@ h1, h2, h3, h4, p {
   color: white;
 }
 
+.card {
+  background-color: #d6e4e5;
+  position: relative;
+  border-radius: 5px;
+}
+.card .image {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.card .image img {
+  width: 90%;
+  border-radius: 5px;
+}
+.card .card-detail {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  row-gap: 6px;
+  font-family: "Jost", sans-serif;
+}
+.card .card-detail h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #112b3c;
+}
+.card .card-detail .stars {
+  display: flex;
+  justify-content: center;
+}
+.card .card-detail .stars .star {
+  color: #ffd700;
+}
+.card .card-detail .price .discount {
+  color: #ea6643;
+}
+.card .card-detail .price s {
+  color: #557c7f;
+}
+.card .percent {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: #eb6845;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+}
+
 .categories {
   margin-top: 40px;
   display: flex;
@@ -198,7 +255,7 @@ nav .menu i {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   nav {
     background-color: white;
     width: 200px;
@@ -507,7 +564,7 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   background-color: #eb6440;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .responsive-menu {
     display: none;
   }
@@ -530,6 +587,9 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 576px;
+  }
+  .container .header-wrapper .center {
+    display: none;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -562,4 +622,37 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
 .category-products .container .title h1 {
   font-size: 30px;
   font-weight: 500;
+}
+.category-products .container .products {
+  border: 1px solid black;
+  position: relative;
+}
+.category-products .container .products .product {
+  margin: 20px 0;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+.category-products .container .products .slider-buttons {
+  width: 100%;
+  display: flex;
+  top: 50%;
+  position: absolute;
+  justify-content: space-between;
+}
+.category-products .container .products .slider-buttons .chevron {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 100%;
+  border: none;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.category-products .container .products .slider-buttons .chevron:hover {
+  opacity: 1;
+  background-color: #497174;
+  transition: background-color 0.3s;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

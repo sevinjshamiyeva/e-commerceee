@@ -62,7 +62,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .responsive-menu {
     display: none;
   }
@@ -88,6 +88,11 @@ header {
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 576px;
+    .header-wrapper{
+      .center{
+        display: none;
+      }
+    }
   }
 }
 @media only screen and (max-width: 576px) {
