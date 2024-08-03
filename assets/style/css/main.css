@@ -32,6 +32,15 @@ h1, h2, h3, h4, p {
   color: white;
 }
 
+.campania-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.campania-wrapper .campania-item {
+  border: 1px solid black;
+  height: 300px;
+}
 .card {
   background-color: #d6e4e5;
   position: relative;
@@ -689,4 +698,8 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   background-color: #497174;
   transition: background-color 0.3s;
   color: white;
+}
+.category-products .container .campania-wrapper {
+  width: 100%;
+  border: 1px solid black;
 }/*# sourceMappingURL=main.css.map */

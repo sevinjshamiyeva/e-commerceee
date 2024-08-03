@@ -1,0 +1,12 @@
+.campania-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    .campania-item{
+       border: 1px solid black;
+       height: 300px;
+    }
+    .campania-item1{
+
+    }
+}
