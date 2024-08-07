@@ -1,12 +1,108 @@
-.campania-wrapper{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.campania-wrapper {
+  margin-top: 20px;
+ 
+  .campania-first {
+    
+    display: flex;
     gap: 20px;
-    .campania-item{
-       border: 1px solid black;
-       height: 300px;
+    
+    .campania-item {
+      border-radius: 8px;
+       padding: 70px 0;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+      &:nth-child(1){
+        flex: 7;
+        background-image: url(https://ecommarcejs.netlify.app/img/campaigns/banner1.png);
+      }
+      &:nth-child(2){
+        flex: 4;
+        background-image: url(https://ecommarcejs.netlify.app/img/campaigns/banner2.png);
+      }
     }
-    .campania-item1{
+  }
+  .campania-second {
+   
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    
+    .campania-item {
+      border-radius: 8px;
+       padding: 70px 0;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+      &:nth-child(1){
+        flex: 4;
+        background-image: url(https://ecommarcejs.netlify.app/img/campaigns/banner4.png);
+      }
+      &:nth-child(2){
+        flex: 7;
+        background-image: url(https://ecommarcejs.netlify.app/img/campaigns/banner3.png);
+      }
+    }
+  }
+  h1{
+    color: white;
+    font-size: 20px;
+    
+    width: 200px;
+    padding: 10px 20px;
+     font-family: "Jost", sans-serif;
+  }
+  .subtitle{
+    color: white;
+    font-size: 14px;
+    
+    width: 250px;
+    padding: 10px 20px;
+     font-family: "Jost", sans-serif;
 
-    }
+  }
+ 
 }
+ @media (max-width: 992px) {
+    .campania-first,
+    .campania-second {
+      flex-direction: column;
+      gap: 20px;
+
+      .campania-item {
+        flex: none; 
+        width: 100%; 
+      }
+    }
+  }
+
+
+// .campania-wrapper {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 20px;
+//   margin-top: 20px;
+//   &:first-child{
+//     .campania-item{
+//       &:nth-child(1){
+//         background-color: blue;
+//       }
+//     }
+//   }
+//   &:last-child{
+//     .campania-item{
+//       &:nth-child(1){
+//         flex: 2;
+//       }
+//     }
+//   }
+//  .campania-item {
+//     padding: 100px 30px;
+//     background-position: center;
+//     border: 1px solid black;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     gap: 30px;
+//     flex: 1;
+//   }
+// }

@@ -22,36 +22,45 @@
         grid-template-columns: repeat(4, 1fr);
         column-gap: 40px;
       }
-      .slider-buttons {
-        width: 100%;
-        display: flex;
-        top: 50%;
-        position: absolute;
-        justify-content: space-between;
+      // .slider-buttons {
+      //   width: 100%;
+      //   display: flex;
+      //   top: 50%;
+      //   position: absolute;
+      //   justify-content: space-between;
 
-        .chevron {
-          width: 40px;
-          height: 40px;
-          font-size: 20px;
-          border-radius: 100%;
-          border: none;
-          opacity: 0.4;
-          background-color: #497174;
-          cursor: pointer;
+      //   .chevron {
+      //     width: 40px;
+      //     height: 40px;
+      //     font-size: 20px;
+      //     border-radius: 100%;
+      //     border: none;
+      //     opacity: 0.4;
+      //     background-color: #497174;
+      //     cursor: pointer;
 
-          &:hover {
-            opacity: 1;
-            background-color: #497174;
-            transition: background-color 0.3s;
-            color: white;
-          }
-        }
-      }
+      //     &:hover {
+      //       opacity: 1;
+      //       background-color: #497174;
+      //       transition: background-color 0.3s;
+      //       color: white;
+      //     }
+      //   }
+      // }
     }
-    .campania-wrapper{
-width: 100%;
-border: 1px solid black;
+  }
+}
+@media only screen and (max-width:768px){
+  .category-products{
+    .container{
+      .products{
+        .product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 
+  }
+      }
     }
   }
 }
