@@ -1,0 +1,7 @@
+.brand {
+  transition: 0.2s ease all;
+  opacity: 0.4;
+  &:hover {
+    opacity: 1;
+  }
+}

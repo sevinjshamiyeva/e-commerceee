@@ -1,0 +1,41 @@
+.blog {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+ 
+
+  .blog-img {
+    overflow: hidden;
+     border-radius: 6px;
+    img {
+      width: 100%;
+
+
+    }
+  }
+  .blog-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin: 15px 0px;
+    font-family: "Jost", sans-serif;
+    .date {
+        color: #9EACB2;
+    
+    }
+    .subtitle{
+        color: #112B3C;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .more{
+      
+      a{
+        font-weight: 600;
+    border-bottom: 2px solid #739294;
+    color: #739294;
+    padding: 3px;
+      }
+    }
+  }
+}

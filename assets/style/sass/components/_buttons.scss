@@ -1,11 +1,43 @@
-.btns{
-        width: 130px;
-        height: 50px;
-        font-family: "Jost", sans-serif;
-       border: none;
-        border-radius: 5px;
-        background-color: #53787B;
-        font-size: 15px;
-        color: white;
+.btns {
+  width: 130px;
+  height: 50px;
+  font-family: "Jost", sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #53787b;
+  font-size: 15px;
+  color: white;
+}
+.slider-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 200px;
+  .chevron {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+    border: none;
+    opacity: 0.4;
+    cursor: pointer;
+    background-color: #497174;
 
-       }
+    &:hover {
+      opacity: 1;
+      background-color: orangered;
+      transition: background-color 0.3s;
+      color: white;
+    }
+  }
+}
+.campaign-click{
+        border: 1px solid black;
+        padding: 8px 100px;
+        border: none;
+        margin-left: 20px;
+         font-family: "Jost", sans-serif;
+         border-radius: 5px;
+
+}
