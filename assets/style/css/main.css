@@ -107,6 +107,20 @@ h1, h2, h3, h4, p {
   border-radius: 5px;
 }
 
+.shop-btn {
+  margin-top: 40px;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 6px;
+  border: 2px solid #497174;
+  color: #497174;
+  text-transform: uppercase;
+}
+.shop-btn:hover {
+  background-color: #497174;
+  color: white;
+}
+
 .campania-wrapper {
   margin-top: 20px;
 }
@@ -821,21 +835,37 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   justify-content: space-around;
   padding: 35px 0px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  background-color: #EFF5F5;
+  background-color: #eff5f5;
   border-radius: 6px;
   flex-wrap: wrap;
   gap: 10px;
 }
 .category-products .discount-sticker {
+  margin-top: 30px;
   background-image: url(https://ecommarcejs.netlify.app/img/single-campaign.png);
-  border: 1px solid black;
-  padding: 240px;
+  padding: 160px;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-}
-.category-products .discount-sticker .detail {
   color: white;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.category-products .discount-sticker h1 {
+  font-weight: 300;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.category-products .discount-sticker .percent {
+  font-size: 60px;
+  font-weight: 700;
+}
+.category-products .discount-sticker .line {
+  background-color: white;
+  width: 50px;
+  border: 1px solid white;
+  text-align: center;
+  height: 7px;
 }
 .category-products .a {
   height: 500px;

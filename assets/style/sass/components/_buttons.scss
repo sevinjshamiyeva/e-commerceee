@@ -41,3 +41,16 @@
          border-radius: 5px;
 
 }
+.shop-btn{
+  margin-top: 40px;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 6px;
+  border: 2px solid #497174;
+  color: #497174;
+  text-transform: uppercase;
+  &:hover{
+    background-color: #497174;
+    color:white
+  }
+}
