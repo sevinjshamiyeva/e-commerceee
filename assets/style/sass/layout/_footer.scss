@@ -1,0 +1,92 @@
+.footer {
+  background-color: #112b3c;
+  .footer-up {
+    .container {
+      .footerUp-wrapper {
+        padding: 60px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .footerUp {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          .footerUp-top {
+            font-family: "Jost", sans-serif;
+
+            .titles {
+              font-size: 30px;
+              max-width: 400px;
+              color: #eff5f5;
+            }
+            .subtitles {
+              font-size: 15px;
+            }
+            .titles-right {
+              font-size: 30px;
+              max-width: 236px;
+              color: #eff5f5;
+            }
+            .subtitles {
+              color: #8c9ba3;
+            }
+          }
+          .footerUp-bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .img {
+              display: flex;
+              margin-top: 40px;
+              gap: 15px;
+
+              .app-store {
+                height: 42px;
+              }
+              .google-play {
+                margin-top: 3px;
+                height: 36px;
+              }
+            }
+            form {
+              display: flex;
+
+              input {
+                width: 100%;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                border: 1px solid #d6e4e5;
+                text-indent: 15px;
+
+                &::placeholder {
+                  font-size: 15px;
+                  font-family: "Jost", sans-serif;
+                }
+              }
+              .subscribe {
+                padding: 15px 50px;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                background-color: #eff5f5;
+                border: none;
+                border: 1px solid #d6e4e5;
+                font-family: "Jost", sans-serif;
+                color: #497174;
+                &:hover {
+                  background-color: #497174;
+                  color: white;
+                }
+              }
+            }
+            .subtitles {
+              color: #8c9ba3;
+              font-size: 13px;
+              font-family: "Jost", sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}
