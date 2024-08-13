@@ -1,6 +1,6 @@
 .footer {
-  background-color: #112b3c;
   .footer-up {
+    background-color: #112b3c;
     .container {
       .footerUp-wrapper {
         padding: 60px 0;
@@ -19,6 +19,7 @@
               font-size: 30px;
               max-width: 400px;
               color: #eff5f5;
+              line-height: 1.2;
             }
             .subtitles {
               font-size: 15px;
@@ -26,6 +27,7 @@
             .titles-right {
               font-size: 30px;
               max-width: 236px;
+              line-height: 1.2;
               color: #eff5f5;
             }
             .subtitles {
@@ -86,6 +88,93 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .footer-center {
+    .container {
+      .footer-center-wrapper {
+        padding: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        .footer-center-left {
+          display: flex;
+          flex-direction: column;
+          font-family: "Jost", sans-serif;
+          gap: 15px;
+          color: #112b3c;
+          .logo {
+            font-size: 30px;
+            font-weight: 600;
+          }
+          .subtitle {
+            max-width: 500px;
+            opacity: 0.8;
+          }
+          .number {
+            opacity: 0.8;
+          }
+        }
+        .footer-center-right {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          color: #112b3c;
+          .right {
+            font-family: "Jost", sans-serif;
+            font-size: 15px;
+            h1 {
+              font-weight: 500;
+              margin-bottom: 10px;
+            }
+            li {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-down {
+    border: 1px solid #d6e4e5;
+    .container {
+      .footer-down-wrapper {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        .footer-down-left {
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+          .footer-down-top {
+            color:#455B68;
+              font-size: 13px;
+              font-family: "Jost", sans-serif;
+
+          }
+         
+        }
+        .footer-down-right{
+          .footer-policy{
+            color:#455B68;
+              font-size: 13px;
+              font-family: "Jost", sans-serif;
+              display: flex;
+              gap: 15px;
+
+            li:not(:last-child){
+              border-right: 1px solid #dee0ea;
+              padding-right: 5px;
+              
+
+            }
+          }
+         }
       }
     }
   }
