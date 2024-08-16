@@ -808,7 +808,7 @@ nav .menu i {
   font-family: "Jost", sans-serif;
 }
 .footer .footer-center .container .footer-center-wrapper {
-  padding: 40px 0;
+  padding: 100px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -835,7 +835,7 @@ nav .menu i {
 .footer .footer-center .container .footer-center-wrapper .footer-center-right {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   color: #112b3c;
 }
 .footer .footer-center .container .footer-center-wrapper .footer-center-right .right {
