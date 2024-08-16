@@ -1,4 +1,4 @@
-.category-products {
+.section {
   width: 100%;
   background-color: #eff5f5;
   .container {
@@ -72,7 +72,6 @@
   .policy {
     margin-top: 40px;
     border: 1px solid #dee0da;
-   
   }
 }
 @media only screen and (max-width: 768px) {
@@ -94,7 +93,7 @@
       .blogs {
         display: flex;
         flex-wrap: wrap;
-       justify-content: center;
+        justify-content: center;
       }
     }
   }

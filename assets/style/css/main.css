@@ -323,6 +323,27 @@ h1, h2, h3, h4, p {
     align-items: center;
   }
 }
+.contact .container .contact-title {
+  font-family: "Jost", sans-serif;
+}
+.contact .container .contact-title h4 {
+  color: orangered;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact .container .contact-title h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.contact .container .contact-title .contact-subtitle {
+  max-width: 980px;
+  font-size: 14px;
+}
+.contact .container .contact-title .contact-wrapper .contact-left label {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+}
+
 nav .toggle {
   display: none;
 }
@@ -919,6 +940,9 @@ header .container .header-wrapper .header-left {
   font-weight: 600;
   color: #112b3c;
 }
+header .container .header-wrapper .header-left a {
+  color: #112b3c;
+}
 header .container .header-wrapper .header-right .left-menu {
   display: flex;
   gap: 20px;
@@ -987,11 +1011,11 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
     max-width: 310px;
   }
 }
-.category-products {
+.section {
   width: 100%;
   background-color: #eff5f5;
 }
-.category-products .container .title {
+.section .container .title {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -999,27 +1023,27 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   font-family: "Jost", sans-serif;
   color: #112b3c;
 }
-.category-products .container .title h1 {
+.section .container .title h1 {
   font-size: 30px;
   font-weight: 500;
 }
-.category-products .container .products {
+.section .container .products {
   position: relative;
 }
-.category-products .container .products .product {
+.section .container .products .product {
   margin: 20px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
 }
-.category-products .container .blogs {
+.section .container .blogs {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   padding: 40px 0;
   justify-content: space-between;
 }
-.category-products .container .brands {
+.section .container .brands {
   display: flex;
   justify-content: space-around;
   padding: 35px 0px;
@@ -1029,7 +1053,7 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   flex-wrap: wrap;
   gap: 10px;
 }
-.category-products .discount-sticker {
+.section .discount-sticker {
   margin-top: 30px;
   background-image: url(https://ecommarcejs.netlify.app/img/single-campaign.png);
   padding: 160px;
@@ -1040,23 +1064,23 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   align-items: center;
   flex-direction: column;
 }
-.category-products .discount-sticker h1 {
+.section .discount-sticker h1 {
   font-weight: 300;
   font-size: 25px;
   text-transform: uppercase;
 }
-.category-products .discount-sticker .percent {
+.section .discount-sticker .percent {
   font-size: 60px;
   font-weight: 700;
 }
-.category-products .discount-sticker .line {
+.section .discount-sticker .line {
   background-color: white;
   width: 50px;
   border: 1px solid white;
   text-align: center;
   height: 7px;
 }
-.category-products .policy {
+.section .policy {
   margin-top: 40px;
   border: 1px solid #dee0da;
 }
