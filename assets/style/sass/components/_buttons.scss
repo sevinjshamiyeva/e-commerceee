@@ -32,16 +32,15 @@
     }
   }
 }
-.campaign-click{
-        border: 1px solid black;
-        padding: 8px 100px;
-        border: none;
-        margin-left: 20px;
-         font-family: "Jost", sans-serif;
-         border-radius: 5px;
-
+.campaign-click {
+  border: 1px solid black;
+  padding: 8px 100px;
+  border: none;
+  margin-left: 20px;
+  font-family: "Jost", sans-serif;
+  border-radius: 5px;
 }
-.shop-btn{
+.shop-btn {
   margin-top: 40px;
   padding: 20px 60px;
   border: none;
@@ -49,8 +48,49 @@
   border: 2px solid #497174;
   color: #497174;
   text-transform: uppercase;
-  &:hover{
+  &:hover {
     background-color: #497174;
-    color:white
+    color: white;
+  }
+}
+.msg {
+  font-family: "Jost", sans-serif;
+  padding: 10px 20px;
+  width: 150px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #497174;
+  &:hover {
+    background-color: #d6e4e5;
+  }
+}
+.login-btn {
+  font-family: "Jost", sans-serif;
+  padding: 10px 20px;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #497174;
+  &:hover {
+    background-color: #d6e4e5;
+  }
+  margin-top: 10px;
+}
+.register-btn {
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+  padding: 10px 20px;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eb6440;
+  &:hover {
+    background-color: #d6e4e5;
   }
 }

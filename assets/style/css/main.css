@@ -122,6 +122,50 @@ h1, h2, h3, h4, p {
   color: white;
 }
 
+.msg {
+  font-family: "Jost", sans-serif;
+  padding: 10px 20px;
+  width: 150px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #497174;
+}
+.msg:hover {
+  background-color: #d6e4e5;
+}
+
+.login-btn {
+  font-family: "Jost", sans-serif;
+  padding: 10px 20px;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #497174;
+  margin-top: 10px;
+}
+.login-btn:hover {
+  background-color: #d6e4e5;
+}
+
+.register-btn {
+  margin-top: 10px;
+  font-family: "Jost", sans-serif;
+  padding: 10px 20px;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eb6440;
+}
+.register-btn:hover {
+  background-color: #d6e4e5;
+}
+
 .campania-wrapper {
   margin-top: 20px;
 }
@@ -323,87 +367,6 @@ h1, h2, h3, h4, p {
     align-items: center;
   }
 }
-.contact .container .contact-title {
-  font-family: "Jost", sans-serif;
-}
-.contact .container .contact-title h4 {
-  color: orangered;
-  font-size: 20px;
-  font-weight: 500;
-}
-.contact .container .contact-title h2 {
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.contact .container .contact-title .contact-subtitle {
-  max-width: 980px;
-  font-size: 14px;
-}
-.contact .container .contact-title .contact-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px;
-}
-.contact .container .contact-title .contact-wrapper .contact-left {
-  width: 50%;
-}
-.contact .container .contact-title .contact-wrapper .contact-left .form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.contact .container .contact-title .contact-wrapper .contact-left .form label {
-  font-family: "Jost", sans-serif;
-  font-size: 13px;
-}
-.contact .container .contact-title .contact-wrapper .contact-left .form .name-email {
-  display: flex;
-  gap: 10px;
-}
-.contact .container .contact-title .contact-wrapper .contact-left .form .name-email input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-}
-.contact .container .contact-title .contact-wrapper .contact-left .form .subject input {
-  width: 100%;
-  padding: 10px 0;
-  border: none;
-  text-indent: 1;
-}
-.contact .container .contact-title .contact-wrapper .contact-left .form .mesagge textarea {
-  width: 100%;
-  height: 50px;
-  border: none;
-}
-.contact .container .contact-title .contact-wrapper .contact-left .form .msg {
-  font-family: "Jost", sans-serif;
-  padding: 10px 20px;
-  width: 150px;
-  color: white;
-  font-size: 15px;
-  border-radius: 5px;
-  border: none;
-  background-color: #497174;
-}
-.contact .container .contact-title .contact-wrapper .contact-right h1 {
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.contact .container .contact-title .contact-wrapper .contact-right p {
-  margin-top: 10px;
-  font-size: 13px;
-}
-.contact .container .contact-title .contact-wrapper .contact-right .open {
-  margin-top: 10px;
-}
-
-@media only screen and (max-width: 768px) {
-  .contact .container .contact-title .contact-wrapper .contact-left {
-    width: 100%;
-  }
-}
 nav .toggle {
   display: none;
 }
@@ -559,6 +522,12 @@ nav .menu i {
     display: none;
   }
 }
+.input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -713,12 +682,12 @@ nav .menu i {
   display: flex;
   font-size: 40px;
   align-items: center;
-  color: #112B3C;
+  color: #112b3c;
 }
 .policy-list .policy-item .policy-text {
   display: flex;
   flex-direction: column;
-  color: #112B3C;
+  color: #112b3c;
   font-family: "Jost", sans-serif;
 }
 .policy-list .policy-item .policy-text strong {
@@ -1069,6 +1038,121 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
 @media only screen and (max-width: 400px) {
   .container {
     max-width: 310px;
+  }
+}
+.account .container .account-wrapper {
+  padding: 40px 0;
+  display: flex;
+  gap: 80px;
+  font-family: "Jost", sans-serif;
+}
+.account .container .account-wrapper h1 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.account .container .account-wrapper .login {
+  width: 50%;
+}
+.account .container .account-wrapper .register {
+  width: 50%;
+}
+.account .container .account-wrapper .account-form {
+  padding: 10px 0;
+}
+.account .container .account-wrapper .account-form span {
+  font-size: 14px;
+}
+.account .container .account-wrapper .account-form span a {
+  color: orangered;
+}
+.account .container .account-wrapper .account-form .remember {
+  margin-top: 30px;
+}
+.account .container .account-wrapper .account-form .note {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .account .container .account-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .account .container .account-wrapper .login {
+    width: 100%;
+  }
+  .account .container .account-wrapper .register {
+    width: 100%;
+  }
+}
+.contact .container .contact-title {
+  font-family: "Jost", sans-serif;
+}
+.contact .container .contact-title h4 {
+  color: orangered;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact .container .contact-title h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.contact .container .contact-title .contact-subtitle {
+  max-width: 980px;
+  font-size: 14px;
+}
+.contact .container .contact-title .contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+.contact .container .contact-title .contact-wrapper .contact-left {
+  width: 50%;
+}
+.contact .container .contact-title .contact-wrapper .contact-left .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .container .contact-title .contact-wrapper .contact-left .form label {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+}
+.contact .container .contact-title .contact-wrapper .contact-left .form .name-email {
+  display: flex;
+  gap: 10px;
+}
+.contact .container .contact-title .contact-wrapper .contact-left .form .name-email input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+.contact .container .contact-title .contact-wrapper .contact-left .form .subject input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  text-indent: 1;
+}
+.contact .container .contact-title .contact-wrapper .contact-left .form .mesagge textarea {
+  width: 100%;
+  height: 50px;
+  border: none;
+}
+.contact .container .contact-title .contact-wrapper .contact-right h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.contact .container .contact-title .contact-wrapper .contact-right p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.contact .container .contact-title .contact-wrapper .contact-right .open {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .container .contact-title .contact-wrapper .contact-left {
+    width: 100%;
   }
 }
 .section {

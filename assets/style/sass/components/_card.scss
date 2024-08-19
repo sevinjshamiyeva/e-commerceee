@@ -10,15 +10,13 @@
     img {
       width: 88%;
       border-radius: 5px;
-      transition: .3s ease all;
+      transition: 0.3s ease all;
     }
-    .img2{
-        position: absolute;
-        opacity: 0;
-       visibility: hidden;
-       
+    .img2 {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
     }
-    
   }
   .card-detail {
     text-align: center;
@@ -73,7 +71,7 @@
     left: 0;
     opacity: 0;
     visibility: hidden;
-    transition: .3s ease-out all;
+    transition: 0.3s ease-out all;
     .element {
       width: 35px;
       height: 35px;
@@ -88,10 +86,9 @@
     transform: translate(15px);
     opacity: 1;
     visibility: visible;
-    
   }
-  &:hover .img2{
-       opacity: 1;
-       visibility: visible;
-    }
+  &:hover .img2 {
+    opacity: 1;
+    visibility: visible;
+  }
 }

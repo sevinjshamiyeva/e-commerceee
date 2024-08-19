@@ -1,0 +1,52 @@
+.account {
+  .container {
+    .account-wrapper {
+      padding: 40px 0;
+      display: flex;
+      gap: 80px;
+      font-family: "Jost", sans-serif;
+      h1 {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .login {
+        width: 50%;
+      }
+      .register {
+        width: 50%;
+      }
+      .account-form {
+        padding: 10px 0;
+        span {
+          font-size: 14px;
+          a {
+            color: orangered;
+          }
+        }
+        .remember {
+          margin-top: 30px;
+        }
+        .note {
+        margin-top: 15px;
+      }
+      }
+      
+    }
+  }
+}
+@media only screen and (max-width:768px){
+    .account{
+.container{
+    .account-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+       .login{
+        width: 100%;
+       }
+       .register{
+        width: 100%;
+       }
+    }
+}
+    }
+}

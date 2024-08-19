@@ -5,11 +5,13 @@
 @use "./components/campania-item";
 @use "./components/card";
 @use "./components/categorie-item";
-@use "./components/contact";
 @use "./components/dropdown";
+@use "./components/input";
 @use "./components/modal-search";
 @use "./components/policy";
 @use "./components/slider";
 @use "./layout/footer";
 @use "./layout/header";
+@use "./pages/account";
+@use "./pages/contact";
 @use "./pages/home";
