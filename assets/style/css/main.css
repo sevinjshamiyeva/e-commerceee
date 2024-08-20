@@ -1155,6 +1155,31 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
     width: 100%;
   }
 }
+.detail .container .breadcrumb {
+  border: 1px solid black;
+}
+.detail .container .breadcrumb nav {
+  padding: 20px 0;
+}
+.detail .container .breadcrumb nav ul {
+  display: flex;
+  gap: 5px;
+}
+.detail .container .breadcrumb nav ul li {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+}
+.detail .container .breadcrumb nav ul li a {
+  color: black;
+}
+.detail .container .breadcrumb nav ul li a:hover {
+  text-decoration: underline;
+}
+.detail .container .breadcrumb nav ul li:not(:last-child):after {
+  content: "/";
+  margin-left: 5px;
+}
+
 .section {
   width: 100%;
   background-color: #eff5f5;
