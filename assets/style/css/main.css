@@ -1101,6 +1101,7 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
   font-size: 14px;
 }
 .contact .container .contact-title .contact-wrapper {
+  padding: 40px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 120px;
@@ -1178,6 +1179,70 @@ header .container .header-wrapper .header-right .left-menu .cart .count {
 .detail .container .breadcrumb nav ul li:not(:last-child):after {
   content: "/";
   margin-left: 5px;
+}
+.detail .container .detail-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.detail .container .detail-wrapper .product-image {
+  border: 1px solid black;
+  width: 30%;
+}
+.detail .container .detail-wrapper .product-image .img {
+  width: 100%;
+}
+.detail .container .detail-wrapper .product-image .product-images {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}
+.detail .container .detail-wrapper .product-image .product-images img {
+  width: 29.4117647059%;
+}
+.detail .container .detail-wrapper .product-detail {
+  width: 65%;
+  border: 1px solid black;
+  font-family: "Jost", sans-serif;
+}
+.detail .container .detail-wrapper .product-detail h1 {
+  font-weight: 600;
+}
+.detail .container .detail-wrapper .product-detail .reviews {
+  padding: 8px 0;
+  display: flex;
+  gap: 15px;
+}
+.detail .container .detail-wrapper .product-detail .reviews .stars {
+  display: flex;
+}
+.detail .container .detail-wrapper .product-detail .reviews .stars .star {
+  color: #FFD700;
+  font-size: 13px;
+}
+.detail .container .detail-wrapper .product-detail .reviews .review {
+  font-size: 13px;
+  opacity: 0.6;
+}
+.detail .container .detail-wrapper .product-detail .product-prices {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+.detail .container .detail-wrapper .product-detail .product-prices s {
+  opacity: 0.6;
+}
+.detail .container .detail-wrapper .product-detail .description {
+  font-size: 14px;
+  display: flex;
+  margin-top: 10px;
+}
+.detail .container .detail-wrapper .product-detail .color .blue {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
 }
 
 .section {
